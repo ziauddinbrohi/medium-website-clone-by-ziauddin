@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://miro.medium.com/v2/1*m-R_BkNf1Qjr1YbyOIJY2w.png" type="image/x-icon">
+    <title>About Medium</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #242424;
+            font-family: "Libre Baskerville", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        main {
+            background-image: url(https://miro.medium.com/v2/resize:fit:1400/format:webp/7*3l9Fl9UIQBgkR_Vu2_ihLg.png);
+            width: 100%;
+        }
+
+        .left {
+            width: 60%;
+            padding: 25px;
+        }
+
+        .left p {
+            color: #ffffff;
+            font-size: 7vw;
+            letter-spacing: -7px;
+            margin-top: 70px;
+            word-spacing: 4px;
+        }
+
+        .left div {
+            color: #f4f4f4;
+            margin: 38px 3px;
+            letter-spacing: 1px;
+            line-height: 26px;
+            font-size: 19px;
+        }
+
+        .left div span {
+            text-decoration: underline;
+        }
+
+        .highlighted-text {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 45px;
+            background-color: rgba(255, 255, 255, .2);
+            color: white;
+            padding: 5px;
+            margin: 2px 0;
+            font-size: 22px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 36px;
+            border-bottom: 1px solid #b3b3b3;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 21px;
+            margin-right: 0.5rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 9px 16px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 33px;
+        }
+
+        .sign-up {
+            background-color: #fff;
+            color: #242424;
+        }
+
+        .hov-div {
+            padding: 40px 25px;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+            color: white;
+            font-size: 5vw;
+        }
+
+        .hov-div {
+            display: flex;
+            justify-content: space-between;
+            transition: background-color 0.3s ease-out 100ms, color 0.3s ease-out 100ms, border 0.3s ease-out 100ms;
+        }
+
+        .hov-div a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .hov-div :hover {
+            color: #242424;
+        }
+
+        .hov-div:hover {
+            background-color: #fff;
+            color: #242424;
+            cursor: pointer;
+        }
+
+
+        footer {
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            height: 80px;
+            border-bottom: 1px solid #242424;
+            display: flex;
+            padding: 0px 38px;
+        }
+
+        footer img {
+            filter: invert(1);
+            width: 142px;
+        }
+
+        footer ul {
+            display: flex;
+            gap: 13px;
+            list-style: none;
+        }
+
+        footer li {
+            color: #242424;
+            text-decoration: underline;
+            font-size: 11px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .btn {
+                text-align: center;
+            }
+
+            .navbar {
+                padding: 28px 14px;
+            }
+
+            .left {
+                width: 100%;
+                padding: 14px;
+            }
+
+            .left p {
+                font-size: 11vw;
+                letter-spacing: -2px;
+                margin-top: 70px;
+                word-spacing: 2px;
+            }
+
+            .highlighted-text {
+                font-size: 23px;
+                line-height: 46px;
+            }
+
+            footer {
+                flex-direction: column;
+                padding: 22px 0;
+                height: 95px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Include your SVG logo here -->
+            <img src="assets/med2.svg" alt="Medium_logo">
+        </div>
+        <div class="nav-buttons">
+            <button class="btn sign-in">Sign in</button>
+            <button class="btn sign-up">Sign up</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="left">
+            <p>
+                Everyone has a story to tell.
+            </p>
+
+            <div>
+                Medium is a home for human stories and ideas. Here, anyone can share insightful perspectives, useful
+                knowledge, and life wisdom with the world—without building a mailing list or a following first. The
+                internet is noisy and chaotic; Medium is quiet yet full of insight. It’s simple, beautiful,
+                collaborative, and helps you find the right audience for whatever you have to say.
+            </div>
+
+            <div>
+                We believe that what you read and write matters. Words can divide or empower us, inspire or discourage
+                us. In a world where the most sensational and surface-level stories often win, we’re building a system
+                that rewards depth, nuance, and time well spent. A space for thoughtful conversation more than drive-by
+                takes, and substance over packaging.
+            </div>
+
+            <blockquote>
+                <span class="highlighted-text">Ultimately, our goal is to deepen our collective</span><br>
+                <span class="highlighted-text">understanding of the world through the power of</span><br>
+                <span class="highlighted-text">writing.</span>
+            </blockquote>
+
+            <div>
+                Over 100 million people connect and share their wisdom on Medium every month. Many are professional
+                writers, but just as many aren’t — they’re CEOs, computer scientists, U.S. presidents, amateur
+                novelists, and anyone burning with a story they need to get out into the world. They write about what
+                they’re working on, what’s keeping them up at night, what they’ve lived through, and what they’ve
+                learned that the rest of us might want to know too.
+            </div>
+
+            <div>Instead of selling ads or selling your data, we’re supported by a growing community of <span>Medium
+                    members</span>
+                who align with our mission. If you’re new here, <span>start exploring</span>. Dive deeper into whatever
+                matters to
+                you. Find a post that helps you learn something new, or reconsider something familiar—and then
+                <span>share
+                    your own story.</span>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="hover-section">
+        <div class="hov-div"><a href="index.html">Start Reading</a><span>→</span></div>
+        <div class="hov-div">Start Writing <span>→</span></div>
+        <div class="hov-div">Become a member <span>→</span></div>
+    </div>
+    <footer>
+        <img src="assets/med2.svg">
+        <ul>
+            <li>About</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Help</li>
+            <li>Teams</li>
+            <li>Press</li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>
